@@ -1,15 +1,12 @@
 .promo-block {
-  padding: 120px 0;
+  padding: 120px 0 70px;
   @include media-max(991) {
-    padding: 65px 0 95px;
+    padding: 65px 0 70px;
   }
   .container {
     & > * {
       max-width: 800px;
       margin: 0 auto;
-      //@include media-max(575) {
-      //  max-width: none;
-      //}
     }
   }
   &__title {
@@ -26,6 +23,10 @@
     padding: 16px 60px;
     @include media-max(991) {
       margin-top: 34px !important;
+    }
+    span {
+      display: block;
+      padding-top: 2px;
     }
     &:hover {
       color: #FFFFFF;

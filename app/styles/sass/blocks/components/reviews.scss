@@ -1,0 +1,10 @@
+.reviews {
+  .container {
+    @include media-max(767) {
+      padding: 0;
+    }
+  }
+  &-desktop {
+    margin-bottom: 60px;
+  }
+}

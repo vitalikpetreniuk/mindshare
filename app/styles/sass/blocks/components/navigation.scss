@@ -63,6 +63,9 @@
       @include media-max(991) {
         padding: 11.5px 20px;
       }
+      @include media-max(991) {
+        padding: 9px 20px;
+      }
     }
     &__wrapper {
       max-height: 1px;

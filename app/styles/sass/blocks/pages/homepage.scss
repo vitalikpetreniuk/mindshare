@@ -14,9 +14,9 @@
     }
   }
   .brands {
-    margin-top: 26px;
-    @include media-max(575) {
-      margin-top: 15px;
+    margin: 26px 0 103px;
+    @include media-max(991) {
+      margin: 15px 0 30px;
     }
   }
 }
