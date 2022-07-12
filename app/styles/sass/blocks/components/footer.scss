@@ -1,0 +1,16 @@
+.footer {
+  padding: 114px 0;
+  @include media-max(991) {
+    padding: 80px 0;
+  }
+  &__btn {
+    padding: 16px 60px;
+    @include media-max(767) {
+      margin-top: 40px;
+    }
+    &:hover {
+      color: #FFFFFF;
+      background: #b17638;
+    }
+  }
+}

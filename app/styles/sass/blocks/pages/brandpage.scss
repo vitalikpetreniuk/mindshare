@@ -1,0 +1,15 @@
+.brandpage {
+  .boxes {
+    margin-top: 50px;
+    @include media-max(991) {
+      margin-top: 32px;
+    }
+  }
+  .products {
+    margin: 90px 0 120px;
+
+    @include media-max(991) {
+      margin: 64px 0 78px;
+    }
+  }
+}

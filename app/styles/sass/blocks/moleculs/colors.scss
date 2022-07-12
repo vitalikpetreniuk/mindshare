@@ -1,0 +1,20 @@
+.text {
+  &-blue {
+    color: #1F5C96;
+  }
+  &-darklblue {
+    color: #263D54;
+  }
+  &-white {
+    color: #FFFFFF;
+  }
+  &-black {
+    color: #2B2E3A;
+  }
+  &-orange {
+    color: #FF9639;
+    &:hover {
+      color: #b17638;
+    }
+  }
+}

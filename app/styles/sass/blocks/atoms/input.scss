@@ -1,0 +1,19 @@
+.input {
+  outline: none;
+  border: 1px solid #1F5C96;
+  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.15));
+  height: 42px;
+  @include media-max(575) {
+    height: 33px;
+    font-size: 12px;
+  }
+  &::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #1F5C96;
+    @include media-max(575) {
+      font-size: 13px;
+    }
+  }
+}

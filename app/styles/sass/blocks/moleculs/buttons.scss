@@ -1,0 +1,13 @@
+.btn-sign {
+  padding: 16px 58px;
+  @include media-max(1199) {
+    padding: 12.5px 40px;
+  }
+  @include media-max(575) {
+    padding: 15px 40px;
+  }
+  &:hover {
+    color: #FFFFFF;
+    background: #b17638;
+  }
+}

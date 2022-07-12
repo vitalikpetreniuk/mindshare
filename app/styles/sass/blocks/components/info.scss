@@ -1,0 +1,43 @@
+.info {
+  padding: 120px 0;
+  @include media-max(991) {
+    padding: 78px 0 15px;
+  }
+  &-title {
+    margin-bottom: 80px;
+    @include media-max(991) {
+      margin-bottom: 26px;
+    }
+  }
+  &-cards {
+    margin: 0 -12px 60px;
+    @include media-max(991) {
+      margin: 0 0 60px;
+    }
+    li {
+      padding: 26px;
+      width: calc(33.3333% - 24px);
+      margin: 0 12px;
+      box-shadow: 0 16px 32px rgba(10, 56, 107, 0.16);
+      @include media-max(991) {
+        width: 100%;
+        margin: 0 0 12px 0;
+      }
+      img {}
+      b {
+        display: block;
+        margin: 40px 0 16px;
+      }
+      p {
+        line-height: 24px;
+      }
+    }
+  }
+  iframe {
+    width: 100%;
+    height: 591px;
+    @include media-max(575) {
+      height: 175px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.top-bar {
+  text-align: center;
+  padding: 21px 0 25px;
+  @include media-max(575) {
+    padding: 13px 0;
+  }
+  p {
+    padding: 0 26px;
+    @include media-max(575) {
+      font-size: 2.56vw;
+      line-height: 12px;
+    }
+    a {
+      &:hover {
+        color: #b17638;
+      }
+    }
+  }
+}

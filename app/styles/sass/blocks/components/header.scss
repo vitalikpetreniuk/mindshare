@@ -1,0 +1,40 @@
+.header {
+  margin-top: 26px;
+  @include media-max(991) {
+    margin-top: 23px;
+  }
+  .container {
+    @include media-max(575) {
+      padding: 0 40px 0 26px;
+    }
+  }
+  &-logo {
+    img {
+      max-width: 269px;
+      @include media-max(575) {
+        max-width: 142px;
+      }
+    }
+  }
+  &-btn {
+    &.opened {
+      span {
+        &:first-of-type {
+          transform: rotate(45deg) translate(25%, 0);
+        }
+        &:last-of-type {
+          transform: rotate(-45deg) translate(25%, 0);
+        }
+      }
+    }
+    span {
+      display: inline-block;
+      width: 31px;
+      height: 2px;
+      margin: 5px 0;
+      transition: .3s linear;
+      &:first-of-type {}
+      &:last-of-type {}
+    }
+  }
+}

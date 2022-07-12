@@ -1,0 +1,31 @@
+.brands {
+  &-slider {
+    margin: 0 -9px;
+    @include media-max(575) {
+      margin: 0 -6px;
+    }
+    li {
+      width: calc(100% - 18px) !important;
+      margin: 0 9px;
+      padding: 18.5px 0;
+      filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.15));
+      @include media-max(575) {
+        width: calc(100% - 12px) !important;
+        margin: 0 6px;
+      }
+      @include media-max(420) {
+        padding: 8px 0;
+      }
+      a {
+        width: 100%;
+        display: block;
+        img {
+          margin: 0 auto;
+          max-width: 199px;
+          width: 100%;
+          max-height: 38px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.slick-prev {
+  left: 25px;
+  z-index: 1;
+  &::before {
+    content: url("../images/dist/icons/icon_prev.svg");
+  }
+}
+
+.slick-next {
+  right: 25px;
+  z-index: 1;
+  &::before {
+    content: url("../images/dist/icons/icon_next.svg");
+  }
+}
+
+.slick-dots {
+  bottom: 14px;
+  @include media-max(575) {
+    bottom: 6px;
+  }
+}
+
+.slick-dots {
+  li {
+    margin: 0;
+    @include media-max(575) {
+      width: 12px;
+    }
+    &.slick-active {
+      button {
+        background: #FFFFFF;
+      }
+    }
+    button {
+      width: 8px;
+      height: 8px;
+      background: transparent;
+      padding: 3px;
+      border-radius: 50%;
+      border: 1px solid #FFFFFF;
+      @include media-max(575) {
+        max-width: 5.5px;
+        max-height: 5.5px;
+        padding: 2px;
+      }
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,22 @@
+.homepage {
+  .welcome {
+    margin: 75px 0 88px;
+  }
+  .navigation {
+    @include media-max(991) {
+      margin-top: 27px;
+    }
+  }
+  .banner {
+    margin-top: 40px;
+    @include media-max(991) {
+      margin-top: 22px;
+    }
+  }
+  .brands {
+    margin-top: 26px;
+    @include media-max(575) {
+      margin-top: 15px;
+    }
+  }
+}
