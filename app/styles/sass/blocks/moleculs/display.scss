@@ -1,0 +1,10 @@
+.d-420-block {
+  @include media-min(420) {
+    display: block !important;
+  }
+}
+.d-420-none {
+  @include media-min(420) {
+    display: none !important;
+  }
+}

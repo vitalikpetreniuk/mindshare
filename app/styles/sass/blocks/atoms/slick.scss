@@ -1,5 +1,7 @@
 .slick-prev {
-  left: 25px;
+  width: 60px;
+  height: 70px;
+  left: 6px;
   z-index: 1;
   &::before {
     content: url("../images/dist/icons/icon_prev.svg");
@@ -7,7 +9,9 @@
 }
 
 .slick-next {
-  right: 25px;
+  width: 60px;
+  height: 70px;
+  right: 6px;
   z-index: 1;
   &::before {
     content: url("../images/dist/icons/icon_next.svg");

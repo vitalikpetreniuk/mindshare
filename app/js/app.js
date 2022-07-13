@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const windowWidth = $('body').innerWidth()
 
-	if(windowWidth > 991){
+	if(windowWidth > 767){
 		$('.products-slider.only-desktop').slick({
 			infinite: true,
 			slidesToShow: 4,

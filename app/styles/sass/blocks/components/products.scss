@@ -8,13 +8,13 @@
   &-slider {
     &.only-desktop {
       margin: 0 -15px;
-      @include media-max(991) {
+      @include media-max(767) {
         margin: 0 -8px;
       }
       li {
         width: calc(100% - 30px) !important;
         margin: 0 15px;
-        @include media-max(991) {
+        @include media-max(767) {
           width: calc(50% - 16px) !important;
           margin: 0 8px 14px 8px;
         }
@@ -28,13 +28,13 @@
     }
     &.desktop-mobile {
       margin: 0 -15px;
-      @include media-max(991) {
+      @include media-max(767) {
         margin: 0 -7px;
       }
       li {
         width: calc(100% - 30px) !important;
         margin: 0 15px;
-        @include media-max(991) {
+        @include media-max(767) {
           width: calc(100% - 14px) !important;
           margin: 0 7px;
         }
