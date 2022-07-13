@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	$('.header-btn').on('click', function () {
 		$('.header-btn').toggleClass('opened')
 		$('.mobile-nav').toggleClass('show')
-		$('body').toggleClass('_over-hidden')
+		$('body, html').toggleClass('_over-hidden')
 	})
 
 	$('.main-slider').slick({
