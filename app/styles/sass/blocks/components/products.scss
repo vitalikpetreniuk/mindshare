@@ -31,6 +31,47 @@
       @include media-max(767) {
         margin: 0 -7px;
       }
+      @include media-max(575) {
+        transform: scale(.9);
+      }
+      .slick-prev {
+        width: 40px;
+        height: 70px;
+        left: 92.5%;
+        top: -41px;
+        @include media-max(1199) {
+          left: 90.5%;
+        }
+        @include media-max(991) {
+          left: -25px;
+          top: 50%;
+        }
+        @include media-max(767) {
+          left: -30px;
+          top: 50%;
+        }
+        &::before {
+          content: url("../images/dist/icons/icon_prev-blue.svg");
+        }
+      }
+
+      .slick-next {
+        width: 40px;
+        height: 70px;
+        right: 6px;
+        top: -41px;
+        @include media-max(991) {
+          right: -25px;
+          top: 50%;
+        }
+        @include media-max(767) {
+          right: -30px;
+          top: 50%;
+        }
+        &::before {
+          content: url("../images/dist/icons/icon_next-blue.svg");
+        }
+      }
       li {
         width: calc(100% - 30px) !important;
         margin: 0 15px;
