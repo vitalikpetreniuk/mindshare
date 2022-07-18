@@ -74,8 +74,19 @@ document.addEventListener('DOMContentLoaded', () => {
 		]
 	});
 
-	$('.navigation-filter__head').on('click', function () {
+	$('.navigation-filter__head').on('click', function (e) {
+		e.preventDefault()
 		$(this).parent().toggleClass('active')
+		$('.navigation-filter__list > li').removeClass('active')
+	})
+
+	$('.navigation-filter__list > li > a').on('click', function (e) {
+		e.preventDefault()
+	})
+
+	$('.navigation-filter__list > li').on('click', function () {
+		$('.navigation-filter__list > li').removeClass('active')
+		$(this).toggleClass('active')
 	})
 
 })

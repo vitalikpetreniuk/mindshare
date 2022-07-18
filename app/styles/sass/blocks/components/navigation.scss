@@ -91,15 +91,46 @@
       &::-webkit-scrollbar-thumb {
         background-color: #1F5C96;
       }
-      li {
-        padding: 12px 20px;
-        a {
+      & > li {
+        & > a {
+          padding: 12px 20px;
+          display: block;
           @include media-max(575) {
             font-size: 12px;
           }
         }
         &:hover {
-          background: #EFF4F8;
+          & > a {
+            background: #EFF4F8;
+          }
+        }
+        & > ul {
+          display: none;
+        }
+      }
+      & > li.active {
+        & > a {
+          font-weight: 500;
+          padding: 12px 20px;
+        }
+        &:hover {
+          & > a {
+            background: #FFFFFF;
+          }
+        }
+        ul {
+          display: block;
+          li {
+            a {
+              display: block;
+              padding: 12px 20px;
+            }
+            &:hover {
+              a {
+                background: #EFF4F8
+              }
+            }
+          }
         }
       }
     }
